@@ -1,0 +1,695 @@
+---
+title: "Solucionario de Controles"
+format: html
+editor: visual
+jupyter: julia-1.9
+---
+
+## Capítulo 15
+
+### Pregunta 1
+
+De acuerdo a lo discutido en la clase y lo leído en el Capítulo 15 del Ross. ¿Por qué razones las empresas hacen juntas extraordinarias de accionistas?
+
+```{julia}
+#| hold: true
+#| echo: false
+using QuizQuestions
+lh_choices = [
+" Con tal de pronunciarse sobre una propuesta de aumento de capital en la empresa. Toma de decisiones respecto a futuras decisiones de la empresa. Ser parte de votaciones acumulativas o directas en las mismas juntas.",
+"Comprar acciones preferentes con tal de ser dueño de una parte de la compañia."
+
+]
+  answ = 1
+  radioq(lh_choices, answ, keep_order=true)
+```
+
+::: {.callout-note collapse="true"}
+#### Pauta
+
+-   La alternativa correcta es correcta por que las juntas extraordinarias de accionistas a menudo se convocan para discutir y votar sobre propuestas importantes, como aumentos de capital, que pueden tener un impacto significativo en la estructura financiera de la empresa. Las decisiones estratégicas y de futuro a menudo se discuten y toman en juntas extraordinarias de accionistas. Las juntas de accionistas proporcionan a los accionistas la oportunidad de participar en votaciones importantes que afectan a la empresa.
+
+-   La alternativa es incorrecta por que las juntas extraordinarias se llaman para hablar de asuntos importantes para la empresa, no para la compra individual de acciones por parte de los accionistas. La compra de acciones preferentes no es algo tan importante como para hacer una junta.
+:::
+
+## Capítulo 20
+
+### Pregunta 1
+
+En la apertura de Osoji, ¿Pudieron colocar todas las acciones?
+
+```{julia}
+#| hold: true
+#| echo: false
+using QuizQuestions
+lh_choices = [
+"No, ya que las AFPs desistieron y los papeles comprados por ellas tuvieron que ser retirados del mercado",
+"No, ya que una Normativa de la CMF restringe a ciertos actores a invertir en SpAs ",
+" Si, efectivamente completaron el libro de órdenes."
+]
+  answ = 2
+  radioq(lh_choices, answ, keep_order=true)
+
+```
+
+::: {.callout-note collapse="true"}
+## Pauta
+
+-   Esta alternativa es incorrecta, porque el texto no menciona que las AFPs desistieron ni que los papeles comprados por ellas tuvieron que ser retirados del mercado. Este escenario se describe en relación con la apertura de Osoji Robotics, no de ZeroQ.
+
+-   Esta alternativa es correcta, porqueel texto menciona que Osoji Robotics, al abrirse a la bolsa, tuvo que restar US\$ 1,2 millones provenientes de distintas AFP debido a una normativa de la Comisión para el Mercado Financiero (CMF) que impide a estos actores invertir en SpA (Sociedades por Acciones).
+
+-   Esta alternativa es incorrecta, porque el texto no da información específica sobre si Osoji completó o no el libro de órdenes. Simplemente menciona que Osoji Robotics debutó en la plaza bursátil venture en septiembre de 2022.
+:::
+
+### Pregunta 2
+
+¿Cuáles son los gastos indirectos asociados a las nuevas emisiones?
+
+```{julia}
+#| hold: true
+#| echo: false
+using QuizQuestions
+lh_choices = [
+" Es el margen entre el precio que el emisor recibe y el precio ofrecido al público.",
+"Son los costos en que incurre el emisor que no forman parte de la remuneración de los suscriptores.",
+"Son costos que no se especifican en el prospecto, como el tiempo administrativo dedicado a la elaboración de la nueva emisión. ",
+"Es el costo incurrido por la caída del precio en el momento de anunciar la emisión."
+
+]
+  answ = 3
+  radioq(lh_choices, answ, keep_order=true)
+```
+
+::: {.callout-note collapse="true"}
+## Pauta
+
+-   Esta alternativa es incorrecta ya que describe más bien la prima de emisión, que es la diferencia entre el precio de emisión y el precio de mercado de las nuevas acciones.
+
+-   Esta alternativa es incorrecta ya que no especifica los detalles específicos de los gastos indirectos asociados a las nuevas emisiones, podria incluir tanto costos directos como indirectos.
+
+-   Esta alternativa es la correcta porque los gastos indirectos asociados a las nuevas emisiones incluyen costos administrativos y de gestión que no están detallados explícitamente en el prospecto de emisión. Estos costos pueden estar relacionados con la planificación, organización y ejecución de la nueva emisión.
+
+-   Esta alternativa es incorrecta ya que se refiere más a las consideraciones de riesgo y a la posible dilución para los accionistas existentes debido a la emisión de nuevas acciones
+:::
+
+## Capítulo 21
+
+### Pregunta 1
+
+¿Cuál de las siguientes caracteristicas corresponden a un arrendamiento apalancado?
+
+```{julia}
+#| hold: true
+#| echo: false
+using QuizQuestions
+lh_choices = [
+"El arrendador paga el 10% del activo.",
+"No existe prestamista.",
+"En caso de incumplimiento de los pagos del préstamo, los pagos del arrendamiento se efectúan en forma directa al arrendador.",
+"El prestamista tiene el primer gravamen sobre el activo."
+
+]
+  answ = 4
+  radioq(lh_choices, answ, keep_order=true)
+
+```
+
+::: {.callout-note collapse="true"}
+## Pauta
+
+-   Esta alternativa es incorrecta ya que no describe un arrendamiento apalancado. El hecho de que el arrendador pague una parte del activo no está directamente relacionado con la naturaleza apalancada del arrendamiento.
+
+-   Esta alternativa es incorrecta porque en un arrendamiento apalancado, generalmente hay un prestamista o arrendador que financia una parte significativa del valor del activo, lo que lo hace "apalancado". Si no hay prestamista, no es apalancado en este contexto.
+
+-   .Esta alternativa es incorrecta porque no describe específicamente un arrendamiento apalancado. En situaciones apalancadas, el incumplimiento generalmente implica que el prestamista tiene derechos sobre el activo, no necesariamente que los pagos del arrendamiento se transfieran directamente al arrendador.
+
+-   Esta alternativa es correcta porque un arrendamiento apalancado implica que el arrendador (prestamista) tiene un interés de seguridad (gravamen) sobre el activo arrendado. En caso de incumplimiento del arrendatario, el arrendador tiene el derecho de tomar posesión del activo para asegurar el pago del préstamo.
+:::
+
+### Pregunta 2
+
+A pesar de que el arrendador en un arrendamiento financiero es el propietario legal del equipo, el arrendatario mantiene la propiedad real porque los arrendamientos financieros se amortizan totalmente
+
+```{julia}
+#| hold: true
+#| echo: false
+using QuizQuestions
+lh_choices = [
+"Verdadero",
+"Falso"
+
+]
+  answ = 1
+  radioq(lh_choices, answ, keep_order=true)
+```
+
+::: {.callout-note collapse="true"}
+## Pauta
+
+-   Los arrendamientos se dividen en dos tipos principales. Aunque los arrendamientos operativos permiten al arrendatario usar el equipo, la propiedad sigue en manos del arrendador. A pesar de que el arrendador en un arrendamiento financiero es el propietario legal del equipo, el arrendatario mantiene la propiedad real porque los arrendamientos financieros se amortizan totalmente
+:::
+
+### Pregunta 3
+
+El leasing operativo que pretende ofrecer Voltera requiere de:
+
+```{julia}
+#| hold: true
+#| echo: false
+using QuizQuestions
+lh_choices = [
+"arriendo de vehículo, un banco como socio, opción de compra",
+""
+]
+  answ = 1
+  radioq(lh_choices, answ, keep_order=true)
+
+```
+
+::: {.callout-note collapse="true"}
+## Pauta
+
+-   El leasing operativo implica el arriendo de vehículos eléctricos a través de un plan que permite a los usuarios utilizar los autos sin la necesidad de adquirirlos directamente. Involucrar a un banco como socio en el leasing operativo puede proporcionar la financiación necesaria para adquirir y mantener la flota de vehículos. La opción de compra brinda a los usuarios la flexibilidad de adquirir el vehículo al final del período de arrendamiento si así lo desean.
+:::
+
+### Pregunta 4
+
+Por que razones el modelo de arrendamiento de Voltera podría ser exitoso:
+
+```{julia}
+#| hold: true
+#| echo: false
+using QuizQuestions
+lh_choices = [
+"Ventajas tributarias, desplazamiento de deuda, incertidumbre",
+"Experiencia de empresas con el modelo anterior en Chile",
+
+]
+  answ = 1
+  radioq(lh_choices, answ, keep_order=true)
+
+```
+
+::: {.callout-note collapse="true"}
+## Pauta
+
+-   Esta alternativa es correcta ya que l arrendamiento operativo puede ofrecer ventajas fiscales, ya que los pagos de arrendamiento suelen ser deducibles de impuestos como gastos operativos. Además optar por el leasing operativo permite a las empresas como Voltera evitar la necesidad de financiamiento a largo plazo para la adquisición de vehículos. Esto puede ser beneficioso para gestionar la deuda y los costos financieros. Por ultimo, La incertidumbre en torno a la propiedad de vehículos eléctricos y la tecnología emergente puede hacer que los usuarios prefieran opciones más flexibles, como el arrendamiento operativo.
+
+-   Esta alternativa es incorrecta porque el texto no menciona específicamente la experiencia de otras empresas con un modelo similar en Chile
+:::
+
+## Capítulo 22
+
+### Pregunta 1
+
+¿Qué es una opción de compra?
+
+```{julia}
+#| hold: true
+#| echo: false
+using QuizQuestions
+lh_choices = [
+"La opción de compra o llamada también call, da el derecho al propietario de vender las acciones a un precio fijo de ejercicio.",
+"La opción de compra o llamada también put, da el derecho al propietario de vender las acciones a un precio fijo de ejercicio.",
+"La opción de compra o llamada también call, es una opción que otorga al propietario el derecho de adquirir un activo a un precio fijo durante un periodo determinado.",
+"La opción de compra o llamada también put, es una opción que otorga al propietario el derecho de adquirir un activo a un precio fijo durante un periodo determinado. "
+
+]
+  answ = 3
+  radioq(lh_choices, answ, keep_order=true)
+```
+
+::: {.callout-note collapse="true"}
+## Pauta
+
+-   Esta alternativa es incorrecta porque describe una opción de venta (put) en lugar de una opción de compra.
+
+-   Esta alternativa es incorrecta porque describe una opción de venta (put) en lugar de una opción de compra.
+
+-   Esta alternativa es correcta porque una opción de compra (o call) efectivamente otorga al propietario el derecho, pero no la obligación, de comprar un activo subyacente a un precio fijo, conocido como precio de ejercicio, durante un periodo específico de tiempo. Esta opción proporciona al titular el beneficio de comprar el activo a un precio fijo, independientemente de si el precio del activo sube en el mercado.
+
+-   Esta alternativa es incorrecta porque combina elementos de ambas opciones de compra y venta
+:::
+
+### Pregunta 2
+
+¿Qué razones motivan la intervención cambiaria del Banco?
+
+```{julia}
+#| hold: true
+#| echo: false
+using QuizQuestions
+lh_choices = [
+"Incertidumbre local, Depreciación peso chileno y Generación de distorsiones en el mercado financiero",
+"Definición de la tasa de política monetaria",
+"Inflación "
+
+]
+  answ = 1
+  radioq(lh_choices, answ, keep_order=true)
+```
+
+::: {.callout-note collapse="true"}
+## Pauta
+
+-   Esta alternativa es correcta la incertidumbre en el entorno económico y financiero puede motivar la intervención cambiaria para estabilizar la moneda y reducir la volatilidad. Si hay una depreciación significativa de la moneda local (en este caso, el peso chileno), el Banco Central puede intervenir para evitar movimientos bruscos y excesivos que podrían afectar la economía. Y por ultimo, la intervención cambiaria también puede ser necesaria para corregir distorsiones en el mercado financiero que podrían surgir debido a movimientos excesivos en las tasas de cambio.
+
+-   Esta alternativa es incorrecta la tasa de política monetaria es una herramienta del banco central, pero no aborda directamente la intervención cambiaria.
+
+-   Esta alternativa es incorrecta porque la inflación puede ser una consideración para el banco central, pero no es la única razón para la intervención cambiaria. La relación entre la inflación y la intervención cambiaria es más compleja y depende de diversos factores económicos.
+:::
+
+### Pregunta 3
+
+Reordene las siguientes opciones de combinación de opciones:
+
+::: {.callout-note collapse="true"}
+## Pauta
+
+-   Opción de venta protectora : Estrategia de comprar una opción de venta, así como la acción subyacente
+
+-   Paridad put-call: precio de la opción de compra + valor presente del precio del ejercicio = precio de acción subyacente + precio de la opción de venta
+
+-   Estrategia de tres partes, o acción sintética: comprar opcion de compra, vender opción de venta y se compra un bono cupón cero
+
+-   Estrategia de compra cubierta: Vender una opción de venta y comprar un bono cupón cero.
+:::
+
+## Capítulo 24
+
+### Pregunta 1
+
+Para definir ausencia de arbitraje decimos que si los retornos son positivos (W \* theta\>=0) entonces el costo del portafolio es negativo.
+
+```{julia}
+#| hold: true
+#| echo: false
+using QuizQuestions
+lh_choices = [
+"positivo",
+"negativo"
+
+]
+  answ = 1
+  radioq(lh_choices, answ, keep_order=true)
+```
+
+::: {.callout-note collapse="true"}
+## Pauta
+
+-   Para definir ausencia de arbiutraje, decimos que si los retornos son positivos entonces el costo del portafolio es positivo tambien, ya que nada es gratis.
+:::
+
+### Pregunta 2
+
+En el caso de 3 activos y 2 estados de la naturaleza, el resultado de W \* theta (donde W es la matriz de transferencias y un portafolio) es igual a:
+
+```{julia}
+#| hold: true
+#| echo: false
+using QuizQuestions
+lh_choices = [
+"Un vector de dimensión 3, donde la primera componente es el costo del portafolio y las dos componentes restantes son los retornos en cada estado y Un vector con el promedio ponderado (por el portafolio) de; el valor de los activos, el retorno de los activos en un estado y el retorno de los activos en el otro estado",
+"Un vector de dimensión 3, donde la primera componente es el costo del portafolio y las dos componentes restantes son los retornos de cada activo",
+"Un vector de dimensión 3, retornos en cada estado ",
+
+]
+  answ = 1
+  radioq(lh_choices, answ, keep_order=true)
+```
+
+::: {.callout-note collapse="true"}
+## Pauta
+
+-   Esta alternativa es correcta porque En el contexto de 3 activos y 2 estados de la naturaleza, W sería una matriz de 3 filas (uno por cada activo) y 1 o 2 columnas (uno por cada estado de la naturaleza) y θ sería un vector de rendimientos con 2 componentes (uno para cada estado de la naturaleza).El resultado W \* θ será un vector de dimensión 3, donde la primera componente es el costo del portafolio y las dos componentes restantes son los rendimientos en cada estado.
+
+-   Esta alternativa es incorrecta porque no refleja la multiplicación de la matriz de pesos del portafolio por el vector de rendimientos.
+
+-   Esta alternativa es incorrecta porque no toma en cuenta la estructura de la matriz de pesos del portafolio y no incluye la componente del costo del portafolio.\
+:::
+
+## Capítulo 25
+
+### Pregunta 1
+
+Los cambios porcentuales en los precios de un bono de baja duración son ........ que los cambios porcentuales en los precios de un bono de alta duración
+
+```{julia}
+#| hold: true
+#| echo: false
+using QuizQuestions
+lh_choices = [
+"mayores",
+"menores",
+"iguales",
+"distintos"
+]
+  answ = 2
+  radioq(lh_choices, answ, keep_order=true)
+
+```
+
+::: {.callout-note collapse="true"}
+## Pauta
+
+-   La duración de un bono mide la sensibilidad del precio del bono a cambios en las tasas de interés. Un bono de baja duración será menos sensible a los cambios en las tasas de interés en comparación con un bono de alta duración. Por lo tanto, los cambios porcentuales en los precios de un bono de baja duración serán menores que los cambios porcentuales en los precios de un bono de alta duración.
+:::
+
+### Pregunta 2
+
+Indique si la siguiente frase es verdadera o falsa:
+
+"La empresa debe tener liquidez adicional para hacer frente a un desembolso repentino antes del vencimiento de un contrato de futuros. Este riesgo adicional puede influir en que los contratos del futuro resulten menos atractivos"
+
+```{julia}
+#| hold: true
+#| echo: false
+using QuizQuestions
+lh_choices = [
+"verdadero",
+"falso",
+
+]
+  answ = 1
+  radioq(lh_choices, answ, keep_order=true)
+```
+
+::: {.callout-note collapse="true"}
+## Pauta
+
+-   La afirmación es verdadera. La empresa necesita tener liquidez adicional para hacer frente a un desembolso repentino antes del vencimiento de un contrato de futuros. En el contexto de los contratos de futuros, se puede requerir el depósito de márgenes o garantías para respaldar la posición. Si la empresa enfrenta una situación inesperada que requiere un desembolso de efectivo, podría influir en su capacidad para mantener o abrir nuevos contratos de futuros. La necesidad de liquidez adicional puede hacer que los contratos de futuros resulten menos atractivos en ciertos escenarios, ya que la empresa debe considerar su capacidad para gestionar estos desembolsos imprevistos.
+:::
+
+### Pregunta 3
+
+¿Por qué las empresas utilizan derivasdos?
+
+```{julia}
+#| hold: true
+#| echo: false
+using QuizQuestions
+lh_choices = [
+"Lo utilizan como herramienta para aumentar la esposicion al riesgo de la compañia",
+"Lo utilizan como herramienta para modificar el capital de la compañia",
+"Lo utilizan como herramienta para cuadrar los activos y pasivos de la compañia",
+"Lo utilizan como herramienta para modificar la exposicion al riesgo de la compañia"
+]
+  answ = 4
+  radioq(lh_choices, answ, keep_order=true)
+
+```
+
+::: {.callout-note collapse="true"}
+## Pauta
+
+-   Esta alternativa es incorrecta porque utilizar derivados para aumentar la exposición al riesgo no suele ser el propósito principal. Más bien, se utilizan para gestionar o reducir el riesgo.
+
+-   Esta alternativa es incorrecta porque no se utilizan para modificar directamente el capital de la compañía. Su función principal es gestionar riesgos financieros.
+
+-   Esta alternativa es incorrecta porque aunque los derivados pueden influir en la gestión de los activos y pasivos, no son la herramienta principal para cuadrarlos. Su función principal es la gestión del riesgo.
+
+-   Esta alternativa es correcta porque los derivados permiten a las empresas cubrirse contra riesgos financieros, como fluctuaciones en las tasas de interés, tipos de cambio, precios de materias primas, entre otros. Al utilizar derivados, las empresas pueden reducir o gestionar el impacto de la volatilidad en sus resultados financieros y protegerse contra posibles pérdidas.
+:::
+
+## Capítulo 26
+
+### Pregunta 1
+
+La clasificacion de egreso de efectivo de "gastos de capital", corresponde a:
+
+```{julia}
+#| hold: true
+#| echo: false
+using QuizQuestions
+lh_choices = [
+"Se trata de pagos por bienes y servicios, como las materias primas",
+"Se trata de pagos en efectivo por activos de larga vida",
+"Esta categoria incluye todos los demas costos normales de las actividades de la empresa que requieren erogaciones en efectivo",
+"Esta categoria incluye pagos de intereses y principal sobre los prestamos pendientes a largo plazo y los pagos de dividendos a los accionistas"
+
+]
+  answ = 2
+  radioq(lh_choices, answ, keep_order=true)
+
+```
+
+::: {.callout-note collapse="true"}
+## Pauta
+
+-   Esta alternativa es incorrecta porque se refiere más a gastos operativos o de funcionamiento, no a gastos de capital.
+
+-   Esta alternativa es correcta porque los gastos de capital incluyen los pagos en efectivo destinados a la adquisición de activos de larga duración, como maquinaria, edificios, equipos, etc. Estos son bienes que se utilizarán en la empresa durante un período prolongado y no se consumirán rápidamente.
+
+-   Esta alternativa es incorrecta porque se refiere a los gastos operativos generales, no a gastos de capital específicamente.
+
+-   Esta alternativa es incorrecta porque se refiere a otros tipos de pagos, como pagos de deuda e dividendos, no a gastos de capital.
+:::
+
+### Pregunta 2
+
+¿Qué es el activo circulante?
+
+```{julia}
+#| hold: true
+#| echo: false
+using QuizQuestions
+lh_choices = [
+"Está compuesto por efectivo y otros activos que se espera que se conviertan en efectivo surante el ejercicio anual",
+"Es aquel que será utilizado para el pago de dividendos",
+"Está comuesto por FFMM e inversiones que serán colocadas sobre el año",
+"Son inversiones que realiza la empresa para ganar rentabilidad al largo plazo"
+
+]
+  answ = 1
+  radioq(lh_choices, answ, keep_order=true)
+
+
+```
+
+::: {.callout-note collapse="true"}
+## Pauta
+
+-   Esta alternativa es correcta porque el activo circulante incluye aquellos activos que se espera que se conviertan en efectivo, se consuman o se utilicen en el ciclo operativo normal de la empresa dentro de un año o el ciclo operativo normal, según cuál sea más largo. Esto incluye efectivo, cuentas por cobrar, inventarios y otros activos que se espera que se liquiden en efectivo en el corto plazo.
+
+-   Esta alternativa es incorrecta porqueno describe adecuadamente el activo circulante. Los dividendos se pagan con utilidades y no son un componente directo del activo circulante.
+
+-   Esta alternativa es incorrecta porque parece referirse a fondos mutuos (FFMM) e inversiones a largo plazo, no al activo circulante, que se centra en activos que se convertirán en efectivo en el corto plazo.
+
+-   Esta alternativa es incorrecta porque se refiere a inversiones a largo plazo, no al activo circulante, que se enfoca en activos más líquidos y de corto plazo.
+:::
+
+## Capítulo 27
+
+### Pregunta 1
+
+A qué papel corresponde la siguiente definición:
+
+"Prestamos a corto plazo para bancos comerciales, existen mercados activos de este papel con vencimiento a tres, seis, nueve y doce meses."
+
+```{julia}
+#| hold: true
+#| echo: false
+using QuizQuestions
+lh_choices = [
+"Certificados de depósitos",
+"Certificados del tesoro de EEUU",
+"Papel comercial",
+"Contratos de recompra"
+
+]
+  answ = 1
+  radioq(lh_choices, answ, keep_order=true)
+
+```
+
+::: {.callout-note collapse="true"}
+## Pauta
+
+-   Esta alternativa es correcta porque los certificados de depositos son instrumentos de deuda emitidos por bancos comerciales para obtener fondos a corto plazo de inversores. Estos instrumentos tienen vencimientos específicos, como tres, seis, nueve o doce meses, y son negociables en mercados secundarios. Los inversores compran los CD y reciben un rendimiento por el préstamo al banco hasta el vencimiento del certificado.
+
+-   Esta alternativa es incorrecta porque son instrumentos emitidos por el gobierno de los Estados Unidos y no son préstamos a corto plazo para bancos comerciales.
+
+-   Esta alternativa es incorrecta porque el papel comercial consiste en los pagarés a corto plazo emitidos por empresas grandes de solvencia reconocida. Por lo general, estos pagarés tienen vencimientos cortos, que llegan hasta 270 días.
+
+-   Esta alternativa es incorrecta porque son acuerdos temporales para vender y luego recomprar activos financieros, pero no son préstamos a corto plazo para bancos comerciales en el sentido de la definición proporcionada.
+:::
+
+### Pregunta 2
+
+Usted tiene una partida de transito de 154 por 13 días. Suponiendo que el mes tiene 31 días. ¿Cuál es el promedio diario de las paridas de tránsito?
+
+```{julia}
+#| hold: true
+#| echo: false
+using QuizQuestions
+lh_choices = [
+"65",
+""
+
+]
+  answ = 1
+  radioq(lh_choices, answ, keep_order=true)
+
+
+```
+
+::: {.callout-note collapse="true"}
+## Pauta
+
+En primer lugar, usted tiene una partida en tránsito de 154 durante 13 días, por lo que decimos que el total de partidas en tránsito es 154 x 13 = 2002. Suponiendo que el mes tiene 31 días, el promedio diario de las partidas en tránsito es de 2002/31=64,5, y aproxmando tenemos 65.
+:::
+
+## Capítulo 28
+
+### Pregunta 1
+
+¿De qué depende la inversión en cuentas por cobrar, para las empresas, segun el capítulo 28?
+
+```{julia}
+#| hold: true
+#| echo: false
+using QuizQuestions
+lh_choices = [
+"Depende del monto de las compras al contado y del periodo promedio de pago.",
+"Depende del monto de las ventas a crédito y del periodo pomedio de cobranza.",
+"Depende del monto de las ventas al contado y del perioso promedio de cobranza.",
+"Depende del monto de las compras con crédito y del periodo de cobranza de pago."
+
+]
+  answ = 2
+  radioq(lh_choices, answ, keep_order=true)
+
+```
+
+::: {.callout-note collapse="true"}
+## Pauta
+
+-   Esta alternativa es incorrecta porque se relaciona más con las cuentas por pagar, no con las cuentas por cobrar.
+
+-   Esta alternativa es correcta porque la inversión en cuentas por cobrar está directamente relacionada con las ventas a crédito y el tiempo promedio que tarda la empresa en cobrar esas cuentas.
+
+-   Esta alternativa es incorrecta porque las ventas al contado generalmente no generan cuentas por cobrar, ya que se pagan inmediatamente.
+
+-   Esta alternativa es incorrecta porque se refiere más a la gestión de cuentas por pagar, no a las cuentas por cobrar.
+:::
+
+### Pregunta 2
+
+¿Cuál de los siguientes elementos, no corresponde a los términos de venta?
+
+```{julia}
+#| hold: true
+#| echo: false
+using QuizQuestions
+lh_choices = [
+"El periodo durante el cual se otorga el crédito",
+"El nivel de derivados financieros que mantiene la emresa.",
+"El descuento por pronto pago y el periodo de descuento",
+"El tipo de instrumento de crédito"
+
+]
+  answ = 2
+  radioq(lh_choices, answ, keep_order=true)
+
+```
+
+::: {.callout-note collapse="true"}
+## Pauta
+
+-   Esta alternativa corresponde a terminos de venta porque se refiere al plazo de tiempo durante el cual el comprador puede pagar la factura después de la compra, es decir, el período de crédito.
+-   Esta alternativa no corresponde con terminos de venta, porque los términos de venta generalmente se centran en los plazos de pago, descuentos, etc. Los derivados financieros se relacionan más con la gestión de riesgos y la estrategia financiera de la empresa.
+-   Esta alternativa corresponde a terminos de venta porque se refiere a los incentivos ofrecidos para pagos anticipados. Es un aspecto importante de los términos comerciales.
+-   Esta alternativa corresponde a terminos de venta porque se refiere a la forma en que se establece el crédito, por ejemplo, a través de una línea de crédito, una carta de crédito, etc.
+:::
+
+### Pregunta 3
+
+¿Por que el regulador interviene el mercado de asesoría provisional? Elija solo la principal
+
+```{julia}
+#| hold: true
+#| echo: false
+using QuizQuestions
+lh_choices = [
+"Para prevenir que las personas tomen decisiones libremente dentro de alternativas más riesgosas",
+"Para prevenir que las personas tomen decisiones libremente dentro de alternativas que provoquen pérdidas en promedio",
+"Para limitar la volatilidad y costos en los que incurren las AFP"
+
+]
+  answ = 2
+  radioq(lh_choices, answ, keep_order=true)
+
+```
+
+::: {.callout-note collapse="true"}
+## Pauta
+
+-   Esta alternativa es incorrecta ya que prevenir que se tomen decisiones libremente puede no ser la principal razón, ya que no todos los riesgos son necesariamente problemáticos. La regulación podría centrarse en evitar decisiones que lleven a pérdidas en promedio, no simplemente en evitar opciones más riesgosas.
+
+-   Esta es la alternativa es la correcta, ya que destaca la preocupación principal de evitar que las personas incurran en pérdidas significativas.
+
+-   Esta alternativa es incorrecta, ya que Si bien la volatilidad y los costos son factores importantes, la regulación generalmente se enfoca en proteger a los inversionistas de decisiones que resultarían en pérdidas en promedio, más que en controlar la volatilidad o los costos.
+:::
+
+### Pregunta 4
+
+¿Qué relación tiene el caso con decisiones financieras a corto plazo?
+
+```{julia}
+#| hold: true
+#| echo: false
+using QuizQuestions
+lh_choices = [
+"Las administradoras deben hacer prevision de la volatilidad e invertir recursos para cubrir los riesgos asociados. Es un caso de análisis de ciclo operativo de una industria donde hay un ciclo de efectivo que se ve perturbado",
+"Que las personas están preocupadas de sus inversiones personales que son típicamente de corto plazo"
+
+]
+  answ = 1
+  radioq(lh_choices, answ, keep_order=true)
+
+```
+
+::: {.callout-note collapse="true"}
+## Pauta
+
+-   Esta opcion es la correcta ya que menciona la gestión de la volatilidad y la inversión de recursos para cubrir riesgos, lo cual está relacionado con las decisiones financieras a corto plazo. Además, hace referencia a la perturbación en el ciclo operativo de una industria, lo que implica consideraciones temporales a corto plazo.
+
+-   Esta alternativa es falsa porque no aborda directamente las decisiones financieras a corto plazo en el contexto de la gestión empresarial o del ciclo operativo de una industria.
+:::
+
+## Capítulo 30
+
+### Pregunta 1
+
+Suponga una empresa internacional con sede en EEUU y que desea invertir en el extranjero.
+
+En un escenario sin perturbaciones ¿Cuál de las siguientes opciones es correcta?
+
+```{julia}
+#| hold: true
+#| echo: false
+using QuizQuestions
+lh_choices = [
+"Usar el método de la moneda nacional para calcular el VPN, nos dice que se calculará el VPN en la moneda extranjera y luego se convertirán a dolares. ",
+"El método de la moneda extranjera para calcular el VPN, nos dice que se convertirá la moneda extranjera a dólar antes de calcular el VPN. ",
+"Usar el método de la moneda nacional es superior a usar el método de la moneda extranjera para evaluar el VPN, ya que se obtiene un resultado mayor. ",
+"Ninguna de las anteriores "
+
+]
+  answ = 4
+  radioq(lh_choices, answ, keep_order=true)
+
+```
+
+::: {.callout-note collapse="true"}
+## Pauta
+
+-   Esta alternativa es falsa, ya que en el método de la moneda nacional, se calcula el VPN en la moneda nacional, no en la moneda extranjera
+
+-   Esta alternativa es falsa ya que en el método de la moneda extranjera, se calcula el VPN directamente en la moneda extranjera, sin convertir a dólares antes de realizar el cálculo.
+
+-   Esta alternativa es falsa ya que no hay una regla general que indique que el método de la moneda nacional siempre dará un resultado mayor. La elección entre el método de la moneda nacional y el método de la moneda extranjera depende de varios factores, incluidas las tasas de cambio y la naturaleza de los flujos de efectivo.
+
+-   Esta alternativa es la correcta, ya que todas son falsas.
+:::
